@@ -37,6 +37,9 @@ public class PersonController {
         ModelAndView mav = new ModelAndView("new");
         return mav;
     }
+    //Binding Result- це клас перевірки валідації данних
+    // відображенн new має таку річ form th:method="POST" th:action="@{/persons}" th:object="${person}">
+    // вона створює форму і коли ми її заповнимо і натисним на кнопку то відправиться метод пост на /persons який в собі буде мати екземпляр person
     @PostMapping("/persons")
     public RedirectView create(@ModelAttribute("person")@Valid Person person,
                                BindingResult bindingResult) {

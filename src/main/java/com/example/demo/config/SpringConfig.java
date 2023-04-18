@@ -17,9 +17,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import javax.sql.DataSource;
 import java.sql.DriverManager;
 
-/**
- * @author Neil Alishev
- */
+
 @Configuration
 
 @EnableWebMvc
